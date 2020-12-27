@@ -1,0 +1,54 @@
+/*------------------------------------*\
+    #BUTTON
+\*------------------------------------*/
+
+.button {
+    @include button-reset;
+    display: inline-block;
+    padding: $spacing-unit ($spacing-unit * 1.5);
+    border-radius: 2px;
+    box-shadow: $box-shadow;
+    font-size: $font-size;
+    font-weight: $font-weight-medium;
+    cursor: pointer;
+    background-color: $gray-500;
+    color: $white;
+    border: 1px solid transparent;
+}
+
+/**
+ * Colors
+ */
+
+.button--primary {
+    background-color: $indigo-500;
+}
+
+.button--success {
+    background-color: $green-500;
+}
+
+.button--danger {
+    background-color: $red-500;
+}
+
+.button--secondary {
+    background-color: $white;
+    border-color: $indigo-500;
+    color: $indigo-500;
+}
+
+/**
+ * Sizes
+ */
+
+.button--large {
+  font-size: $font-size-x-large;
+  padding: ($spacing-unit * 1.5) ($spacing-unit * 4);
+}
+
+.button--full {
+    display: block;
+    width: 100%;
+    text-align: center;
+}

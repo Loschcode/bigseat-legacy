@@ -1,0 +1,30 @@
+<div class="signin">
+  <div class="signin__wrapper">
+    <div class="signin__logo">
+      BigSeat.
+    </div>
+    <div class="signin__card">
+      <div class="signin__title">{{t "signin.welcome_back"}}</div>
+      <div class="signin__description">{{t "signin.description" }}</div>
+      <form class="form">
+        <div class="form__group">
+          <label for="email" class="form__label">{{t "labels.email"}}</label>
+          <Input @id="email" @name="email" @placeholder="{{t "signin.email_placeholder"}}" class="form__input" />
+        </div>
+
+        <div class="form__group">
+          <label for="email" class="form__label">{{t "labels.password"}}</label>
+          <Input @type="password" @id="password" @name="password" class="form__input" />
+        </div>
+
+        <div class="form__group">
+          <button type="submit" class="button button--primary button--full" {{on "click" submitForm }}>{{t "signin.submit" }}</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="signin__footer">
+      <LinkTo @route="signup" class="button button--secondary button--full">Create an account</LinkTo>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+/*------------------------------------*\
+    #EMPTY-STATE
+\*------------------------------------*/
+
+.empty-state {
+    margin-top: $spacing-unit * 5;
+    text-align: center;
+}
+
+    .empty-state__asset {
+        margin: 0 auto;
+        max-width: 740px;
+    }
+
+        .empty-state__svg {}
+
+    .empty-state__title {
+        margin-top: $spacing-unit * 4;
+        font-size: $font-size-3x-large;
+        font-weight: $font-weight-semi-bold;
+        letter-spacing: $letter-spacing-x-small;
+    }
+
+    .empty-state__description {
+        margin: 0 auto;
+        margin-top: $spacing-unit;
+        max-width: 550px;
+        font-size: $font-size-large;
+        font-weight: $font-weight-light;
+        line-height: $line-height-large;
+    }
+
+    .empty-state__button {
+        margin-top: $spacing-unit * 2;
+    }
+

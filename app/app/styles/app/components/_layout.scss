@@ -1,0 +1,28 @@
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+
+.layout {
+    margin: 0 auto;
+    max-width: $breakpoint-2x-large;
+}
+
+    .layout__wrapper {
+        display: grid;
+        grid-template-columns: 350px 1fr;
+        height: 100vh;
+    }
+
+        .layout__sidebar {
+            align-self: start;
+        }
+
+        .layout__main {
+            position: relative;
+            margin: $spacing-unit * 5;
+            margin-left: 0;
+            padding: $spacing-unit * 5;
+            background: $white;
+            box-shadow: $box-shadow;
+            border-radius: 6px;
+        }

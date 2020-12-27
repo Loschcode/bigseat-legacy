@@ -1,0 +1,14 @@
+rooms:
+  new_room: Create my first room
+  no_results:
+    title: You don't have any room yet
+    description: By creating a room, you'll be able to pin your desks and assign people to them according to your planning.
+signin:
+  welcome_back: Happy to see you again!
+  description: Sign-in to access your account
+  email_placeholder: john.smith@gmail.com
+  submit: Sign-in
+
+labels:
+  email: Email
+  password: Password

@@ -1,0 +1,46 @@
+<div class="navigation">
+  <div class="navigation__top">
+    <LinkTo @route="application" class="navigation__logo">BigSeat</LinkTo>
+    <ul class="navigation__items">
+      <li class="navigation__item">
+        <Navigation::Item
+          @route="rooms"
+          @icon="stack"
+          @label="Rooms"
+        />
+      </li>
+      <li class="navigation__item">
+        <Navigation::Item
+          @route="analytics"
+          @icon="pulse"
+          @label="Analytics"
+        />
+      </li>
+      <li class="navigation__item">
+        <Navigation::Item
+          @route="integrations"
+          @icon="cloud-check"
+          @label="Integrations"
+        />
+      </li>
+    </ul>
+  </div>
+  <div class="navigation__bottom">
+    <hr class="navigation__delimiter">
+    <ul class="navigation__sub-items">
+      <li class="navigation__sub-item">
+        <a href="#" class="navigation__sub-item-link">Help Center</a>
+      </li>
+      <li class="navigation__sub-item">
+        <a href="#" class="navigation__sub-item-link">Billing</a>
+      </li>
+      <li class="navigation__sub-item">
+        <a href="#" class="navigation__sub-item-link">Logout</a>
+      </li>
+
+      <li class="navigation__sub-item navigation__sub-item--username">
+        <a href="#" class="navigation__sub-item-link">Ges Jeremie</a>
+      </li>
+    </ul>
+  </div>
+</div>
