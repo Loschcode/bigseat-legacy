@@ -24,7 +24,34 @@
             margin-top: $spacing-unit * 2;
         }
 
-          .navigation__item {}
+            .navigation__item {}
+
+                .navigation__item-link {
+                    display: block;
+                    margin-right: $spacing-unit * 2;
+                    padding: ($spacing-unit / 0.75) ($spacing-unit * 2);
+                    border-radius: 5px;
+                    font-weight: $font-weight-normal;
+                    color: $gray-500;
+
+                    &:hover {
+                        color: $indigo-500;
+                        background-color: $gray-100;
+                    }
+
+                    &.active {
+                        color: $indigo-500;
+                        background-color: $indigo-100;
+                        font-weight: $font-weight-medium;
+                    }
+                }
+
+                    .navigation__item-icon {
+                          margin-right: $spacing-unit;
+                          width: 24px;
+                          vertical-align: middle;
+                          fill: currentColor;
+                    }
 
     .navigation__bottom {}
 

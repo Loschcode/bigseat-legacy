@@ -3,25 +3,19 @@
     <LinkTo @route="application" class="navigation__logo">BigSeat</LinkTo>
     <ul class="navigation__items">
       <li class="navigation__item">
-        <Navigation::Item
-          @route="rooms"
-          @icon="stack"
-          @label="Rooms"
-        />
+        <LinkTo @route="rooms" class="navigation__item-link">
+          {{inline-svg "icons/stack" class="navigation__item-icon"}} Rooms
+        </LinkTo>
       </li>
       <li class="navigation__item">
-        <Navigation::Item
-          @route="analytics"
-          @icon="pulse"
-          @label="Analytics"
-        />
+        <LinkTo @route="analytics" class="navigation__item-link">
+          {{inline-svg "icons/pulse" class="navigation__item-icon"}} Analytics
+        </LinkTo>
       </li>
       <li class="navigation__item">
-        <Navigation::Item
-          @route="integrations"
-          @icon="cloud-check"
-          @label="Integrations"
-        />
+        <LinkTo @route="integrations" class="navigation__item-link">
+          {{inline-svg "icons/cloud-check" class="navigation__item-icon"}} Integrations
+        </LinkTo>
       </li>
     </ul>
   </div>
@@ -34,10 +28,6 @@
       <li class="navigation__sub-item">
         <a href="#" class="navigation__sub-item-link">Billing</a>
       </li>
-      <li class="navigation__sub-item">
-        <a href="#" class="navigation__sub-item-link">Logout</a>
-      </li>
-
       <li class="navigation__sub-item navigation__sub-item--username">
         <a href="#" class="navigation__sub-item-link">Ges Jeremie</a>
       </li>
