@@ -1,0 +1,53 @@
+/*------------------------------------*\
+    #SIGNUP
+\*------------------------------------*/
+
+.signup {
+    margin-top: $spacing-unit * 8;
+}
+
+    .signup__wrapper {
+        display: grid;
+        margin: 0 auto;
+        max-width: $breakpoint-large;
+        grid-template-columns: repeat(2, 50%);
+        box-shadow: $box-shadow;
+    }
+
+
+        .signup__intro {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            padding: $spacing-unit * 5;
+            color: $white;
+            background: linear-gradient(180deg, $indigo-500 0.1%, $indigo-700 100%);
+
+            p {
+                margin-top: $spacing-unit * 3;
+            }
+        }
+
+            .signup__title {
+                font-size: $font-size-3x-large;
+                letter-spacing: $letter-spacing-x-small;
+                font-weight: $font-weight-semi-bold;
+            }
+
+            .signup__description {
+                margin-top: $spacing-unit * 5;
+                line-height: $line-height-small;
+            }
+
+        .signup__form {
+            padding: $spacing-unit * 5;
+            padding-top: $spacing-unit * 2;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background-color: $white;
+        }
+
+            .signup__asset {
+                margin: 0 auto;
+                max-width: 250px;
+            }
+

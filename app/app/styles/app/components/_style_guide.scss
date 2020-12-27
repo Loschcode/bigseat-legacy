@@ -1,0 +1,64 @@
+/*------------------------------------*\
+    #STYLE-GUIDE
+\*------------------------------------*/
+
+$style-guide-color-variants: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+
+.style-guide {}
+
+    .style-guide__wrapper {
+        margin: 0 auto;
+        margin-top: $spacing-unit * 2;
+        max-width: $breakpoint-large;
+    }
+
+        .style-guide__section {
+            margin: ($spacing-unit * 10) 0;
+        }
+
+            .style-guide__title {
+                font-size: $font-size-2x-large;
+                font-weight: $font-weight-bold;
+                letter-spacing: $letter-spacing-small;
+            }
+
+            .style-guide__subtitle {
+                margin-top: $spacing-unit * 2;
+                margin-bottom: $spacing-unit;
+                font-weight: $font-weight-bold;
+            }
+
+            .style-guide__example {}
+
+              .style-guide__swatches {
+                  display: flex;
+              }
+
+                .style-guide__swatch {
+                    width: 100px;
+                    height: 100px;
+                    margin-right: $spacing-unit;
+                    border: 1px solid black;
+                    background: $black;
+                }
+
+                .style-guide__swatch--gray-100 { background-color: $gray-100; }
+                .style-guide__swatch--gray-200 { background-color: $gray-200; }
+                .style-guide__swatch--gray-300 { background-color: $gray-300; }
+                .style-guide__swatch--gray-400 { background-color: $gray-400; }
+                .style-guide__swatch--gray-500 { background-color: $gray-500; }
+
+                .style-guide__swatch--indigo-100 { background-color: $indigo-100; }
+                .style-guide__swatch--indigo-200 { background-color: $indigo-200; }
+                .style-guide__swatch--indigo-300 { background-color: $indigo-300; }
+                .style-guide__swatch--indigo-400 { background-color: $indigo-400; }
+                .style-guide__swatch--indigo-500 { background-color: $indigo-500; }
+
+                .style-guide__swatch--green-500 { background-color: $green-500; }
+
+                .style-guide__swatch--red-500 { background-color: $red-500; }
+
+
+                    .style-guide__swatch-value {
+                        padding: $spacing-unit;
+                    }
