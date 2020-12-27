@@ -1,7 +1,8 @@
-<div class="mt-32 m-auto max-w-lg">
-  {{inline-svg "illustrations/analytics" class="w-full h-full"}}
-</div>
+<div class="empty-state">
+  <div class="empty-state__asset empty-state__asset--analytics">
+    {{inline-svg "illustrations/analytics" class="svg"}}
+  </div>
 
-<h1 class="mt-12 font-semibold text-3xl tracking-tight">There's no analytics so far</h1>
-<p class="m-auto mt-4 max-w-md font-light leading-normal">You need to use the app more so that some metrics can be digested.</p>
-<button class="inline-block mt-8 px-8 py-4 w-lg outline-none border-none text-xl focus:outline-none rounded-md font-semibold text-white bg-indigo-600 focus:outline-none font-medium shadow">Start using the app</button>
+  <h1 class="empty-state__title">{{t "analytics.no_results.title"}}</h1>
+  <p class="empty-state__description">{{t "analytics.no_results.description"}}</p>
+</div>

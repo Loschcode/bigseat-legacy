@@ -1,3 +1,7 @@
+analytics:
+  no_results:
+    title: There's no analytics so far
+    description: You need to use the app more so that some metrics can be digested.
 rooms:
   new_room: Create my first room
   no_results:
