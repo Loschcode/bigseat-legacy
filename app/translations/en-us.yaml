@@ -2,6 +2,15 @@ analytics:
   no_results:
     title: There's no analytics so far
     description: You need to use the app more so that some metrics can be digested.
+
+labels:
+  email: Email
+  password: Password
+
+people:
+  no_results:
+    title: No one booked so far
+    description: You need more people booking to be able to manage them here.
 rooms:
   new_room: Create my first room
   no_results:
@@ -12,7 +21,3 @@ signin:
   description: Sign-in to access your account
   email_placeholder: john.smith@gmail.com
   submit: Sign-in
-
-labels:
-  email: Email
-  password: Password

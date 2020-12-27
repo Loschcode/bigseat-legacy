@@ -8,12 +8,20 @@
 }
 
     .empty-state__asset {
+        display: block;
         margin: 0 auto;
-        max-width: 740px;
+        max-width: 700px;
     }
 
+    .empty-state__asset--rooms {}
+
     .empty-state__asset--analytics {
+        margin-top: $spacing-unit * 5;
         max-width: 500px;
+    }
+
+    .empty-state__asset--people {
+        margin-top: $spacing-unit * 15;
     }
 
         .empty-state__svg {}
