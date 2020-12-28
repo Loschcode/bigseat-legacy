@@ -1,16 +1,60 @@
-{{#if (not-eq this.showRecords "true")}}
-  <div class="empty-state">
-    <div class="empty-state__asset empty-state__asset--rooms">
-      {{inline-svg "illustrations/table" class="svg"}}
-    </div>
+<div class="rooms">
+  {{#if (not-eq this.showRecords "true")}}
+    <div class="empty-state">
+      <div class="empty-state__asset empty-state__asset--rooms">
+        {{inline-svg "illustrations/table" class="svg"}}
+      </div>
 
-    <h1 class="empty-state__title">{{t "rooms.no_results.title"}}</h1>
-    <p class="empty-state__description">{{t "rooms.no_results.description"}}</p>
+      <h1 class="empty-state__title">{{t "rooms.no_results.title"}}</h1>
+      <p class="empty-state__description">{{t "rooms.no_results.description"}}</p>
 
-    <div class="empty-state__button">
-      <LinkTo @route="rooms.new" class="button button--large button--primary">{{t "rooms.new_room"}}</LinkTo>
+      <div class="empty-state__button">
+        <LinkTo @route="rooms.new" class="button button--large button--primary">{{t "rooms.new_room"}}</LinkTo>
+      </div>
     </div>
-  </div>
-{{else}}
-  Yolo
-{{/if}}
+  {{else}}
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Images</th>
+          <th>Name</th>
+          <th>Total Seats</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1, 2, 3</td>
+          <td>Room #1</td>
+          <td>10</td>
+          <td>
+            <div class="grid">
+              <div class="grid__cell grid__cell--50">
+                <a class="button button--primary button--small button--full">Edit</a>
+              </div>
+              <div class="grid__cell grid__cell--50">
+                <a class="button button--danger button--small button--full">Remove</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>1, 2, 3</td>
+          <td>Room #1</td>
+          <td>10</td>
+          <td>
+            <div class="grid">
+              <div class="grid__cell grid__cell--50">
+                <a class="button button--primary button--small button--full">Edit</a>
+              </div>
+              <div class="grid__cell grid__cell--50">
+                <a class="button button--danger button--small button--full">Remove</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button class="button button--primary button--large">Add a new room</button>
+  {{/if}}
+</div>

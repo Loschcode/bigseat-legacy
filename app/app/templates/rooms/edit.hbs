@@ -41,10 +41,9 @@
               </div>
             </div>
             <div class="grid__cell grid__cell--33 rooms-edit__save">
-              <!-- Need to use <LinkTo> -->
-              <a href="/rooms/?showRecords=true" class="button button--primary button--full">
+              <LinkTo @route="rooms" @query={{hash showRecords="true"}} class="button button--primary button--full">
                 Save
-              </a>
+              </LinkTo>
             </div>
           </div>
         </div>
