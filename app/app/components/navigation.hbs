@@ -3,7 +3,7 @@
     <LinkTo @route="application" class="navigation__logo">BigSeat</LinkTo>
     <ul class="navigation__items">
       <li class="navigation__item">
-        <LinkTo @route="rooms" class="navigation__item-link">
+        <LinkTo @route="rooms" @query="{{hash showRecords="true"}}" class="navigation__item-link">
           {{inline-svg "icons/stack" class="navigation__item-icon"}} Rooms
         </LinkTo>
       </li>
