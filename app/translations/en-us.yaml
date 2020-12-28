@@ -12,6 +12,10 @@ people:
     title: No one booked so far
     description: You need more people booking to be able to manage them here.
 rooms:
+  add_pictures:
+    title: Please add pictures of your room
+    description: Once those pictures are uploaded, you can assign people to different desks.
+    drop_files_here: Drop files here or click to upload
   new_room: Create my first room
   no_results:
     title: You don't have any room yet
