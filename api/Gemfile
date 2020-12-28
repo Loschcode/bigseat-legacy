@@ -12,12 +12,14 @@ gem 'rack-cors'
 group :development, :test do
   gem 'pry'
   gem 'rspec'
+  gem 'rubocop-rspec', required: false
 end
 
 group :development do
   gem 'listen', '~> 3.3'
   gem 'spring'
-  gem 'rubocop'
+  gem 'rubocop-rails', require: false
+  gem 'rubocop-performance', require: false
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

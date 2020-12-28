@@ -12,6 +12,9 @@ AllCops:
     - 'spec/**/*'
     - 'lib/**/*'
 
+  Exclude:
+    - 'bin/**/*'
+
 # Prefer &&/|| over and/or.
 Style/AndOr:
   Enabled: true
