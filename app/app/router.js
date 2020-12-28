@@ -12,13 +12,13 @@ Router.map(function() {
 
   this.route('rooms', function () {
     this.route('new');
+    this.route('edit', { path: '/:room_id/edit' })
   });
 
   this.route('analytics', function () {
   });
 
   this.route('people', function () {
-
   });
 
   this.route('integrations');

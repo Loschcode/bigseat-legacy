@@ -1,0 +1,18 @@
+/*------------------------------------*\
+    #UPLOAD-ZONE
+\*------------------------------------*/
+
+.upload-zone {
+    margin: 0 auto;
+    margin-top: $spacing-unit * 4;
+    padding: ($spacing-unit * 6) ($spacing-unit * 4);
+    max-width: 90%;
+    border: 1px dashed $gray-400;
+}
+
+  .upload-zone__title {
+      letter-spacing: $letter-spacing-small;
+      font-size: $font-size-2x-large;
+      font-weight: $font-weight-semi-bold;
+      color: $gray-500;
+  }
