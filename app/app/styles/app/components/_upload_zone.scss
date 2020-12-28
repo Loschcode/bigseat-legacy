@@ -8,6 +8,10 @@
     padding: ($spacing-unit * 6) ($spacing-unit * 4);
     max-width: 90%;
     border: 1px dashed $gray-400;
+
+    &:hover {
+      cursor: pointer;
+    }
 }
 
   .upload-zone__title {
