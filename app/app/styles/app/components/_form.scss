@@ -11,8 +11,8 @@
         .form__label {
             display: block;
             width: 100%;
-            font-weight: $font-weight-light;
             font-size: $font-size;
+            font-weight: $font-weight-light;
 
             + .form__input {
               margin-top: $spacing-unit / 2;
@@ -27,9 +27,9 @@
 
         .form__input {
             display: block;
+            padding: $spacing-unit * 1.5;
             width: 100%;
             font-size: $font-size;
             border: 1px solid $gray-400;
             border-radius: 5px;
-            padding: $spacing-unit * 1.5;
         }

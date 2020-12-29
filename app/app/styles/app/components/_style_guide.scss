@@ -35,11 +35,11 @@ $style-guide-color-variants: 100, 200, 300, 400, 500, 600, 700, 800, 900;
               }
 
                 .style-guide__swatch {
+                    margin-right: $spacing-unit;
                     width: 100px;
                     height: 100px;
-                    margin-right: $spacing-unit;
-                    border: 1px solid black;
                     background: $black;
+                    border: 1px solid black;
                 }
 
                 .style-guide__swatch--gray-100 { background-color: $gray-100; }

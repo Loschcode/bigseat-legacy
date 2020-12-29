@@ -12,9 +12,9 @@
 
         .rooms-edit__content {
             display: grid;
-            grid-template-columns: 150px 1fr;
-            grid-gap: $spacing-unit * 2;
             height: 80%;
+            grid-gap: $spacing-unit * 2;
+            grid-template-columns: 150px 1fr;
         }
 
             .rooms-edit__thumbnails { }
@@ -22,9 +22,9 @@
                 .rooms-edit__thumbnails-list {}
 
                     .rooms-edit__thumbnails-item {
+                        margin-bottom: $spacing-unit;
                         width: 150px;
                         height: 150px;
-                        margin-bottom: $spacing-unit;
                     }
 
                         .rooms-edit__thumbnails-add {
@@ -52,13 +52,12 @@
         }
 
             .rooms-edit__footer-container {
-                padding-top: $spacing-unit * 2;
-
-                border-top: 1px solid $gray-300;
                 position: absolute;
                 right: 0;
                 bottom: 0;
                 left: 0;
+                padding-top: $spacing-unit * 2;
+                border-top: 1px solid $gray-300;
             }
 
                 .rooms-edit__total-seats {

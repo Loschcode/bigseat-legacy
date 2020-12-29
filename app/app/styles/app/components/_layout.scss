@@ -9,8 +9,8 @@
 
     .layout__wrapper {
         display: grid;
-        grid-template-columns: 350px 1fr;
         height: 100vh;
+        grid-template-columns: 350px 1fr;
     }
 
         .layout__sidebar {
@@ -23,6 +23,6 @@
             margin-left: 0;
             padding: $spacing-unit * 5;
             background: $white;
-            box-shadow: $box-shadow;
             border-radius: 6px;
+            box-shadow: $box-shadow;
         }

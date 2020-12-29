@@ -9,8 +9,7 @@
     box-shadow: $box-shadow;
 }
 
-.dropdown--navigation {
-}
+.dropdown--navigation {}
 
     .dropdown__items {
         display: flex;
@@ -26,7 +25,7 @@
                 padding: $spacing-unit * 2;
 
                 &:hover {
-                    background-color: $indigo-100;
                     color: $indigo-500;
+                    background-color: $indigo-100;
                 }
             }

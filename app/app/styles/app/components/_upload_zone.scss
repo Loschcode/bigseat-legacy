@@ -14,9 +14,9 @@
     }
 }
 
-  .upload-zone__title {
-      letter-spacing: $letter-spacing-small;
-      font-size: $font-size-2x-large;
-      font-weight: $font-weight-semi-bold;
-      color: $gray-500;
-  }
+    .upload-zone__title {
+        color: $gray-500;
+        font-size: $font-size-2x-large;
+        font-weight: $font-weight-semi-bold;
+        letter-spacing: $letter-spacing-small;
+    }

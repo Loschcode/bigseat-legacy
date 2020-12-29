@@ -6,14 +6,14 @@
     @include button-reset;
     display: inline-block;
     padding: $spacing-unit ($spacing-unit * 1.5);
-    border-radius: 2px;
-    box-shadow: $box-shadow;
+    color: $white;
     font-size: $font-size;
     font-weight: $font-weight-medium;
-    cursor: pointer;
     background-color: $gray-500;
-    color: $white;
     border: 1px solid transparent;
+    border-radius: 2px;
+    box-shadow: $box-shadow;
+    cursor: pointer;
 }
 
 /**
@@ -33,9 +33,9 @@
 }
 
 .button--secondary {
+    color: $indigo-500;
     background-color: $white;
     border-color: $indigo-500;
-    color: $indigo-500;
 }
 
 /**
@@ -43,13 +43,13 @@
  */
 
 .button--small {
-    font-size: $font-size-small;
     padding: ($spacing-unit * 0.5) $spacing-unit;
+    font-size: $font-size-small;
 }
 
 .button--large {
-  font-size: $font-size-x-large;
-  padding: ($spacing-unit * 1.5) ($spacing-unit * 4);
+    padding: ($spacing-unit * 1.5) ($spacing-unit * 4);
+    font-size: $font-size-x-large;
 }
 
 .button--full {

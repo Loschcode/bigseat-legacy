@@ -4,9 +4,9 @@
 
 @mixin full-bleed {
     position: relative;
-    width: 100vw;
-    left: 50%;
     right: 50%;
-    margin-left: -50vw;
+    left: 50%;
     margin-right: -50vw;
+    margin-left: -50vw;
+    width: 100vw;
 }
