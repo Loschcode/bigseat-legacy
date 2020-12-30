@@ -37,11 +37,31 @@
     background-color: $red-500;
 }
 
-.button--secondary {
+.button--outline {
+    color: $gray-500;
+    background-color: $white;
+    border-color: $gray-500;
+}
+
+.button--primary-outline {
     color: $indigo-500;
     background-color: $white;
     border-color: $indigo-500;
 }
+
+.button--success-outline {
+    color: $green-500;
+    background-color: $white;
+    border-color: $green-500;
+}
+
+.button--danger-outline {
+    color: $red-500;
+    background-color: $white;
+    border-color: $red-500;
+}
+
+
 
 /**
  * Sizes
