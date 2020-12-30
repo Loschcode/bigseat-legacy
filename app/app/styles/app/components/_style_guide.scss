@@ -25,7 +25,12 @@ $style-guide-color-variants: 100, 200, 300, 400, 500, 600, 700, 800, 900;
             .style-guide__subtitle {
                 margin-top: $spacing-unit * 2;
                 margin-bottom: $spacing-unit;
+                font-size: $font-size-large;
                 font-weight: $font-weight-bold;
+            }
+
+            .style-guide__description {
+                margin: ($spacing-unit * 2) 0;
             }
 
             .style-guide__example {}
