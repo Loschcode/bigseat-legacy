@@ -15,6 +15,10 @@
 
     .empty-state__asset--rooms {}
 
+    .empty-state__asset--not-found {
+        max-width: 600px;
+    }
+
     .empty-state__asset--analytics {
         margin-top: $spacing-unit * 5;
         max-width: 500px;

@@ -1,0 +1,23 @@
+/*------------------------------------*\
+    #TABLE
+\*------------------------------------*/
+
+.table {
+    width: 100%;
+    border-collapse: separate;
+
+    thead {
+        th {
+            padding-bottom: $spacing-unit * 2;
+            color: $gray-500;
+            font-weight: $font-weight-bold;
+            text-align: left;
+        }
+    }
+
+    tbody {
+        td {
+            padding: $spacing-unit 0;
+        }
+    }
+}

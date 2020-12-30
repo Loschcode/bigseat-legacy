@@ -34,6 +34,7 @@ $shimmer-effect-animation-duration: 1s !default;
     overflow: hidden;
 
     &:after {
+        content: '';
         position: absolute;
         top: 0;
         right: 0;
@@ -43,6 +44,5 @@ $shimmer-effect-animation-duration: 1s !default;
         width: 100%;
         background: linear-gradient(to right, rgba($color, 0) 32%, rgba($color, 0.15) 50%, rgba($color, 0) 64%) 50% 50%;
         animation: shimmer-effect $animation-duration linear infinite;
-        content: '';
     }
 }

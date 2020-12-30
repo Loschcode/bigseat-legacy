@@ -7,12 +7,16 @@
     margin-top: $spacing-unit * 4;
     padding: ($spacing-unit * 6) ($spacing-unit * 4);
     max-width: 90%;
-    border: 1px dashed $gray-400;
+    border: 1px dashed $gray-500;
+
+    &:hover {
+      cursor: pointer;
+    }
 }
 
-  .upload-zone__title {
-      letter-spacing: $letter-spacing-small;
-      font-size: $font-size-2x-large;
-      font-weight: $font-weight-semi-bold;
-      color: $gray-500;
-  }
+    .upload-zone__title {
+        color: $gray-500;
+        font-size: $font-size-2x-large;
+        font-weight: $font-weight-semi-bold;
+        letter-spacing: $letter-spacing-small;
+    }

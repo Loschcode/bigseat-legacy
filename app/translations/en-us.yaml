@@ -7,10 +7,16 @@ labels:
   email: Email
   password: Password
 
+not_found:
+  title: Not found
+  description: The page you’re looking for cannot be found
+  return_to_root: Back to homepage
+
 people:
   no_results:
     title: No one booked so far
     description: You need more people booking to be able to manage them here.
+
 rooms:
   add_pictures:
     title: Please add pictures of your room
@@ -20,6 +26,7 @@ rooms:
   no_results:
     title: You don't have any room yet
     description: By creating a room, you'll be able to pin your desks and assign people to them according to your planning.
+
 signin:
   welcome_back: Happy to see you again!
   description: Sign-in to access your account

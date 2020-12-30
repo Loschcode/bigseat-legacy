@@ -17,25 +17,25 @@
 }
 
 html {
-  min-height: 100%; /* [1] */
-  color: $black;
-  font-size:  $root-font-size;
-  font-family: $font-family-primary;
-  -moz-osx-font-smoothing: grayscale; /* [2] */
-  -webkit-font-smoothing:  antialiased; /* [2] */
-  line-height: $line-height;
-  letter-spacing: normal; /* [3] */
-  text-size-adjust: 100%; /* [4] */
-  background-color: $gray-100;
-  overflow-y: scroll; /* [5] */
+    min-height: 100%; /* [1] */
+    color: $black;
+    font-size:  $root-font-size;
+    font-family: $font-family-primary;
+    line-height: $line-height;
+    letter-spacing: normal; /* [3] */
+    text-size-adjust: 100%; /* [4] */
+    background-color: $gray-100;
+    -moz-osx-font-smoothing: grayscale; /* [2] */
+    -webkit-font-smoothing:  antialiased; /* [2] */
+    overflow-y: scroll; /* [5] */
 }
 
 body {
-  font-size: $font-size-small;
+    font-size: $font-size-small;
 
-  @include respond-to('medium') {
-    font-size: $font-size;
-  }
+    @include respond-to('medium') {
+        font-size: $font-size;
+    }
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -64,5 +64,9 @@ code {
 
 select {
     display: none;
+}
+
+img {
+  max-width: 100%;
 }
 
