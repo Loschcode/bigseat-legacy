@@ -6,7 +6,7 @@
 .svg {
     max-width: 100%;
 
-    .rooms-edit__thumbnails-add & {
+    .room-editor__thumbnails-add & {
         @include center;
         width: 40px;
     }
