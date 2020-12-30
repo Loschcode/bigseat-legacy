@@ -1,5 +1,5 @@
 <div class="rooms">
-  {{#if (not-eq this.showRecords "true")}}
+  {{#unless this.showRecords}}
     <div class="empty-state">
       <div class="empty-state__asset empty-state__asset--rooms">
         {{inline-svg "illustrations/table" class="svg"}}
@@ -56,5 +56,5 @@
     </table>
 
     <button type="button" class="button button--primary button--large">Add a new room</button>
-  {{/if}}
+  {{/unless}}
 </div>
