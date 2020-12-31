@@ -1,20 +1,5 @@
 <div class="rooms">
-  {{#unless this.showRecords}}
-    <div class="rooms__no-results">
-      <div class="empty-state">
-        <div class="empty-state__asset empty-state__asset--rooms">
-          {{inline-svg "illustrations/table" class="svg"}}
-        </div>
-
-        <h1 class="empty-state__title">{{t "admin.rooms.no_results.title"}}</h1>
-        <p class="empty-state__description">{{t "admin.rooms.no_results.description"}}</p>
-
-        <div class="empty-state__button">
-          <LinkTo @route="admin.rooms.new" class="button button--large button--primary">{{t "admin.rooms.new_room"}}</LinkTo>
-        </div>
-      </div>
-    </div>
-  {{else}}
+  {{#if this.showRecords}}
     <div class="rooms__wrapper">
       <div class="rooms__content">
         <table class="table">
@@ -64,5 +49,20 @@
         <button type="button" class="button button--primary button--large">Add a new room</button>
       </div>
     </div>
-  {{/unless}}
+  {{else}}
+    <div class="rooms__no-results">
+      <div class="empty-state">
+        <div class="empty-state__asset empty-state__asset--rooms">
+          {{inline-svg "illustrations/table" class="svg"}}
+        </div>
+
+        <h1 class="empty-state__title">{{t "admin.rooms.no_results.title"}}</h1>
+        <p class="empty-state__description">{{t "admin.rooms.no_results.description"}}</p>
+
+        <div class="empty-state__button">
+          <LinkTo @route="admin.rooms.new" class="button button--large button--primary">{{t "admin.rooms.new_room"}}</LinkTo>
+        </div>
+      </div>
+    </div>
+  {{/if}}
 </div>

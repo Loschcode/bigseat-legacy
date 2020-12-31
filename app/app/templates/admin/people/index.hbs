@@ -1,8 +1,65 @@
-<div class="empty-state">
-  <div class="empty-state__asset empty-state__asset--people">
-    {{inline-svg "illustrations/work" class="svg"}}
-  </div>
+<div class="people">
+  {{#if this.showRecords}}
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>Name</th>
+          <th>Visits</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ges.jeremie@gmail.com</td>
+          <td>Jeremie Ges</td>
+          <td>10</td>
+          <td>
+            <button class="button button--primary">Edit member</button>
+          </td>
+        </tr>
+        <tr>
+          <td>ges.jeremie@gmail.com</td>
+          <td>Jeremie Ges</td>
+          <td>10</td>
+          <td>
+            <button class="button button--primary">Edit member</button>
+          </td>
+        </tr>
+        <tr>
+          <td>ges.jeremie@gmail.com</td>
+          <td>Jeremie Ges</td>
+          <td>10</td>
+          <td>
+            <button class="button button--primary">Edit member</button>
+          </td>
+        </tr>
+        <tr>
+          <td>ges.jeremie@gmail.com</td>
+          <td>Jeremie Ges</td>
+          <td>10</td>
+          <td>
+            <button class="button button--primary">Edit member</button>
+          </td>
+        </tr>
+        <tr>
+          <td>ges.jeremie@gmail.com</td>
+          <td>Jeremie Ges</td>
+          <td>10</td>
+          <td>
+            <button class="button button--primary">Edit member</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  {{else}}
+    <div class="empty-state">
+      <div class="empty-state__asset empty-state__asset--people">
+        {{inline-svg "illustrations/work" class="svg"}}
+      </div>
 
-  <h1 class="empty-state__title">{{t "admin.people.no_results.title"}}</h1>
-  <p class="empty-state__description">{{t "admin.people.no_results.description"}}</p>
+      <h1 class="empty-state__title">{{t "admin.people.no_results.title"}}</h1>
+      <p class="empty-state__description">{{t "admin.people.no_results.description"}}</p>
+   </div>
+  {{/if}}
 </div>
