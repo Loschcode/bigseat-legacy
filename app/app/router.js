@@ -17,17 +17,15 @@ Router.map(function() {
     this.route('integrations');
     this.route('people', function () {});
     this.route('settings');
-
-    this.route('signup');
-    this.route('signin');
   });
-
 
   this.route('booking', function () {
     this.route('privacy');
     this.route('terms');
   });
 
+  this.route('signup');
+  this.route('signin');
   this.route('style-guide');
   this.route('not-found', { path: '/*path' });
 });
