@@ -9,7 +9,5 @@ export default class AdminRoute extends Route {
     if (!this.auth.isSignedIn()) {
       return this.transitionTo('signin');
     }
-
-    this.transitionTo('admin.rooms');
   }
 }
