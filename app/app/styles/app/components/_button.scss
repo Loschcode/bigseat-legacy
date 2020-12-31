@@ -9,12 +9,12 @@
     color: $white;
     font-size: $font-size;
     font-weight: $font-weight-medium;
+    line-height: $line-height;
     background-color: $gray-500;
     border: 1px solid transparent;
     border-radius: 2px;
     box-shadow: $box-shadow;
     cursor: pointer;
-    line-height: $line-height;
 
     &:disabled {
         cursor: not-allowed;
