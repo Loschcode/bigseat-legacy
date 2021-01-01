@@ -14,8 +14,8 @@ $card-integration-padding: $spacing-unit * 3.5 !default;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 100%;
         padding: $card-integration-padding;
+        height: 100%;
     }
         .card-integration__body {}
 
@@ -25,13 +25,13 @@ $card-integration-padding: $spacing-unit * 3.5 !default;
             }
 
                 .card-integration__logo {
-                    max-width: 50px;
                     width: 100%;
+                    max-width: 50px;
                 }
 
                 .card-integration__status {
-                    font-size: $font-size;
                     color: $gray-500;
+                    font-size: $font-size;
                     font-weight: $font-weight-normal;
                     text-transform: uppercase;
                 }
@@ -58,6 +58,4 @@ $card-integration-padding: $spacing-unit * 3.5 !default;
                     line-height: $line-height;
                 }
 
-        .card-integration__footer {
-
-        }
+        .card-integration__footer {}
