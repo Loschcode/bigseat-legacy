@@ -1,0 +1,63 @@
+/*------------------------------------*\
+    #CARD-INTEGRATION
+\*------------------------------------*/
+
+$card-integration-padding: $spacing-unit * 3.5 !default;
+
+.card-integration {
+    height: 100%;
+    border: 1px solid $gray-300;
+    border-radius: 5px;
+}
+
+    .card-integration__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: $card-integration-padding;
+    }
+        .card-integration__body {}
+
+            .card-integration__header {
+                display: flex;
+                justify-content: space-between;
+            }
+
+                .card-integration__logo {
+                    max-width: 50px;
+                    width: 100%;
+                }
+
+                .card-integration__status {
+                    font-size: $font-size;
+                    color: $gray-500;
+                    font-weight: $font-weight-normal;
+                    text-transform: uppercase;
+                }
+
+                .card-integration__status--enabled {
+                    color: $green-500;
+                }
+
+                .card-integration__status--disabled {}
+
+            .card-integration__content {}
+
+                .card-integration__title {
+                    margin-top: $spacing-unit * 2;
+                    font-size: $font-size-3x-large;
+                    font-weight: $font-weight-semi-bold;
+                    letter-spacing: $letter-spacing-x-small;
+                }
+
+                .card-integration__description {
+                    margin-top: $spacing-unit * 2;
+                    margin-bottom: $spacing-unit * 4;
+                    font-size: $font-size;
+                    line-height: $line-height;
+                }
+
+        .card-integration__footer {
+
+        }
