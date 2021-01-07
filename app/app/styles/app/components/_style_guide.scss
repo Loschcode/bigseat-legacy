@@ -14,17 +14,19 @@
             margin: ($spacing-unit * 10) 0;
         }
 
-            .style-guide__title {
+            .style-guide__heading {
+                margin: $spacing-unit 0;
                 font-size: $font-size-2x-large;
                 font-weight: $font-weight-bold;
                 letter-spacing: $letter-spacing-small;
             }
 
-            .style-guide__subtitle {
-                margin-top: $spacing-unit * 2;
-                margin-bottom: $spacing-unit;
+            .style-guide__heading--2 {
+                font-size: $font-size-x-large;
+            }
+
+            .style-guide__heading--3 {
                 font-size: $font-size-large;
-                font-weight: $font-weight-bold;
             }
 
             .style-guide__description {
@@ -65,3 +67,13 @@
                     .style-guide__swatch-value {
                         padding: $spacing-unit;
                     }
+
+            .style-guide__font-size-x-small { font-size: $font-size-x-small; }
+            .style-guide__font-size-small { font-size: $font-size-small; }
+            .style-guide__font-size { font-size: $font-size; }
+            .style-guide__font-size-large { font-size: $font-size-large; }
+            .style-guide__font-size-x-large { font-size: $font-size-x-large; }
+            .style-guide__font-size-2x-large { font-size: $font-size-2x-large; }
+            .style-guide__font-size-3x-large { font-size: $font-size-3x-large; }
+            .style-guide__font-size-4x-large { font-size: $font-size-4x-large; }
+
