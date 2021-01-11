@@ -34,7 +34,6 @@ body {
     font-weight: $font-weight-normal;
     line-height: $line-height;
 
-
     @include respond-to('medium') {
         font-size: $font-size;
     }
