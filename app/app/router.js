@@ -26,6 +26,8 @@ Router.map(function() {
 
   this.route('signup');
   this.route('signin');
+
   this.route('style-guide');
+
   this.route('not-found', { path: '/*path' });
 });

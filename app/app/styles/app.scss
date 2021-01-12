@@ -1,3 +1,6 @@
+@import 'ember-modal-dialog/ember-modal-structure';
+@import 'ember-modal-dialog/ember-modal-appearance';
+
 @import 'app/settings/spacing';
 @import 'app/settings/colors';
 @import 'app/settings/breakpoints';
@@ -40,5 +43,10 @@
 @import 'app/components/layout_booking';
 @import 'app/components/card_integration';
 @import 'app/components/integrations';
+@import 'app/components/text_button';
+@import 'app/components/centered_scrolling';
+@import 'app/components/privacy';
+@import 'app/components/terms';
 
 @import 'app/hooks/ember_basic_dropdown';
+@import 'app/hooks/ember_modal_dialog';
