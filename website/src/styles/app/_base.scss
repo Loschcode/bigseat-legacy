@@ -17,6 +17,14 @@ body {
   color: $color-secondary;
   background-color: $color-background;
   -webkit-tap-highlight-color: transparent;
+  ::-moz-selection {
+    color: $color-white;
+    background: $color-primary;
+  }
+  ::selection {
+    color: $color-white;
+    background: $color-primary;
+  }
 }
 
 button:focus {
