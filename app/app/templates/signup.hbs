@@ -60,7 +60,7 @@
                   </div>
                   <div class="grid__cell grid__cell--90">
                     <label for="terms" class="form__label form__label--terms">
-                      I agree to BigSeat's <LinkTo @route="application" class="link link--primary">Terms of Service</LinkTo> and the use of personal data as explained in BigSeat's <LinkTo @route="application" class="link link--primary">Privacy Policy</LinkTo>.
+                      I agree to BigSeat's <button type="button" class="text-button text-button--primary" {{on "click" this.toggleTerms}}>Terms of Service</button> and the use of personal data as explained in BigSeat's <button type="button" class="text-button text-button--primary" {{on "click" this.togglePrivacy}}>Privacy Policy</button>.
                     </label>
                   </div>
                 </div>
@@ -77,3 +77,30 @@
     </div>
   </div>
 </div>
+
+{{#if isShowingTerms}}
+  <ModalDialog
+      @onClose={{this.toggleTerms}}
+      @targetAttachment="none"
+      @translucentOverlay="true"
+      @wrapperClass="centered-scrolling"
+      @overlayClass="centered-scrolling__overlay"
+      @containerClass="centered-scrolling__container"
+  >
+    <Terms />
+  </ModalDialog>
+{{/if}}
+
+
+{{#if isShowingPrivacy}}
+  <ModalDialog
+      @onClose={{this.togglePrivacy}}
+      @targetAttachment="none"
+      @translucentOverlay="true"
+      @wrapperClass="centered-scrolling"
+      @overlayClass="centered-scrolling__overlay"
+      @containerClass="centered-scrolling__container"
+  >
+    <Privacy />
+  </ModalDialog>
+{{/if}}

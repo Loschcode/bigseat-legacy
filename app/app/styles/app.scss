@@ -1,3 +1,6 @@
+@import 'ember-modal-dialog/ember-modal-structure';
+@import 'ember-modal-dialog/ember-modal-appearance';
+
 @import 'app/settings/spacing';
 @import 'app/settings/colors';
 @import 'app/settings/breakpoints';
@@ -19,7 +22,7 @@
 
 @import 'app/components/example';
 @import 'app/components/style_guide';
-@import 'app/components/layout';
+@import 'app/components/layout_admin';
 @import 'app/components/navigation';
 @import 'app/components/empty_state';
 @import 'app/components/button';
@@ -31,8 +34,19 @@
 @import 'app/components/dropdown';
 @import 'app/components/upload_zone';
 @import 'app/components/not_found';
-@import 'app/components/rooms_edit';
+@import 'app/components/room_editor';
 @import 'app/components/table';
 @import 'app/components/loader';
+@import 'app/components/grid';
+@import 'app/components/settings';
+@import 'app/components/rooms';
+@import 'app/components/layout_booking';
+@import 'app/components/card_integration';
+@import 'app/components/integrations';
+@import 'app/components/text_button';
+@import 'app/components/centered_scrolling';
+@import 'app/components/privacy';
+@import 'app/components/terms';
 
 @import 'app/hooks/ember_basic_dropdown';
+@import 'app/hooks/ember_modal_dialog';

@@ -7,22 +7,26 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
+  this.route('admin', { path: '/' }, function () {
+    this.route('rooms', function () {
+      this.route('new');
+      this.route('edit');
+    });
+
+    this.route('analytics', function () {});
+    this.route('integrations');
+    this.route('people', function () {});
+    this.route('settings');
+  });
+
+  this.route('booking', function () {
+    this.route('privacy');
+    this.route('terms');
+  });
+
   this.route('signup');
   this.route('signin');
 
-  this.route('rooms', function () {
-    this.route('new');
-    this.route('edit', { path: '/:room_id/edit' })
-  });
-
-  this.route('analytics', function () {
-  });
-
-  this.route('people', function () {
-  });
-
-  this.route('integrations');
-  this.route('settings');
   this.route('style-guide');
 
   this.route('not-found', { path: '/*path' });

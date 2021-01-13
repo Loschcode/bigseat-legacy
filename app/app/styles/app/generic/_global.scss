@@ -21,7 +21,6 @@ html {
     color: $black;
     font-size:  $root-font-size;
     font-family: $font-family-primary;
-    line-height: $line-height;
     letter-spacing: normal; /* [3] */
     text-size-adjust: 100%; /* [4] */
     background-color: $gray-100;
@@ -32,6 +31,8 @@ html {
 
 body {
     font-size: $font-size-small;
+    font-weight: $font-weight-normal;
+    line-height: $line-height;
 
     @include respond-to('medium') {
         font-size: $font-size;

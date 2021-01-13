@@ -1,8 +1,9 @@
 import Controller from '@ember/controller';
 import { action } from '@ember/object';
 import { inject as service } from '@ember/service';
+import { later } from '@ember/runloop';
 
-export default class SiginController extends Controller {
+export default class SigninController extends Controller {
   @service auth;
 
   isProcessing = false
@@ -11,10 +12,10 @@ export default class SiginController extends Controller {
   submitForm() {
     this.set('isProcessing', true);
 
-    setTimeout(function () {
+    later(this, function () {
       this.set('isProcessing', false);
       this.auth.signIn();
-      this.transitionToRoute('rooms');
-    }.bind(this), 2000);
+      this.transitionToRoute('admin');
+    }, 2000);
   }
 }

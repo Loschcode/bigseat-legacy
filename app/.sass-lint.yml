@@ -39,7 +39,9 @@ rules:
   leading-zero:
     - 1
     - include: true
-  mixins-before-declarations: 1
+  mixins-before-declarations:
+    - 1
+    - exclude: ['respond-to']
   no-css-comments: 0
   no-duplicate-properties: 1
   no-empty-rulesets: 0
