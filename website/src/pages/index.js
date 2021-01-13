@@ -1,71 +1,101 @@
 import * as React from "react"
 import IntroductionImage from "../images/introduction.svg"
+import AccessibilityImage from "../images/accessibility.svg"
+
 // markup
 const IndexPage = () => {
   return (
     <main>
       <div className="wrapper">
-        <div className="row header">
-          <div className="col-xs-6">
-            <h1 className="header__logo">
-              BigSeat.
-            </h1>
-          </div>
-          <div className="col-xs-6">
-            <div className="row menu">
-              <div className="col-xs-3">
-                Features
-              </div>
-              <div className="col-xs-3">
-                Pricing
-              </div>
-              <div className="col-xs-3">
-                About
-              </div>
-              <div className="col-xs-3">
-                <span className="menu__button">
-                  Sign-in
-                </span>
-              </div>
+        {/* Header */}
+        <div className="container-fluid">
+          <div className="row header">
+            <div className="col-xs-6">
+              <h1 className="header__logo">
+                BigSeat.
+              </h1>
             </div>
-          </div>
-        </div>
-        <div class="row introduction">
-          <div class="col-xs-12">
-            <div class="row">
-              <div class="col-xs-12">
-                <h2 class="introduction__punchline">
-                  Office hotdesk made simple.
-                </h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-6 col-xs-offset-3">
-                <div class="introduction__underline">
-                  Optimize space, track seats and integrates easily with your company stack.
+            <div className="col-xs-6">
+              <div className="row menu">
+                <div className="col-xs-3">
+                  Features
+                </div>
+                <div className="col-xs-3">
+                  Pricing
+                </div>
+                <div className="col-xs-3">
+                  About
+                </div>
+                <div className="col-xs-3">
+                  <span className="menu__button">
+                    Sign-in
+                  </span>
                 </div>
               </div>
             </div>
-            <div class="row center-xs">
-              <div class="col-xs-8">
-                <div class="row middle-xs">
-                  <div class="col-xs-4 col-xs-offset-2">
-                    <span class="button">
-                      Sign up free now
-                    </span>
+          </div>
+          <div className="row introduction">
+            <div className="col-xs-12">
+              <div className="row">
+                <div className="col-xs-12">
+                  <h2 className="introduction__punchline">
+                    Office hotdesk made simple.
+                  </h2>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-xs-6 col-xs-offset-3">
+                  <div className="introduction__underline">
+                    Optimize space, track seats and integrate easily with your company stack.
                   </div>
-                  <div class="col-xs-4">
-                    <div class="link">
-                      Learn how we do it
+                </div>
+              </div>
+              <div className="row center-xs">
+                <div className="col-xs-8">
+                  <div className="row middle-xs">
+                    <div className="col-xs-4 col-xs-offset-2">
+                      <span className="button">
+                        Sign up free now
+                      </span>
+                    </div>
+                    <div className="col-xs-4">
+                      <div className="link">
+                        Learn how we do it
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <div className="row">
+                <div className="col-xs-12">
+                  <div className="introduction__image">
+                    <img src={IntroductionImage} />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="introduction__image">
-                  <img src={IntroductionImage} />
+          </div>
+        </div>
+        {/* Features */}
+        <div className="container-fluid">
+          <div className="row features">
+            <div className="col-xs-8 col-xs-offset-2">
+              <div className="row">
+                <div className="col-xs-12">
+                  <h2 className="features__punchline">
+                    It's that simple.
+                  </h2>
+                </div>
+              </div>
+              <div className="row middle-xs">
+                <div className="col-xs-5">
+                  <h3 className="features-block__title">Accessibility</h3>
+                  <p className="features-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+                <div className="col-xs-5 col-xs-offset-2">
+                  <div class="features-block__image">
+                    <img src={AccessibilityImage} />
+                  </div>
                 </div>
               </div>
             </div>
