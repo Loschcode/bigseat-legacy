@@ -22,5 +22,9 @@
 @import "app/tweaks";
 @import "app/responsive";
 
-// // Base styling
+// Base styling
 @import "app/base";
+
+// Components
+@import "components/header";
+@import "components/menu";
