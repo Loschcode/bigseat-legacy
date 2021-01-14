@@ -6,6 +6,10 @@
   display: inline-block;
   margin-bottom: 0.7em;
 
+  @include breakpoint("md") {
+    margin-top: 2em;
+  }
+
   &::after {
     position: absolute;
     display: block;

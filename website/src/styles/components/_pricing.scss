@@ -3,6 +3,7 @@
 }
 
 .pricing__punchline {
+  margin-bottom: 1em;
   font-size: 50px;
   letter-spacing: -0.9px;
   font-weight: 600;
@@ -11,13 +12,15 @@
 }
 
 .pricing-block {
-  margin-top: 5em;
+  margin-top: 4em;
   margin-bottom: 5em;
-  // margin-right: 1em;
-  // margin-left: 1em;
   border: 1px solid $color-primary;
   padding: 1em;
   background: $color-white;
+  @include breakpoint("xs") {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
 }
 
 .pricing-block__title {
@@ -45,7 +48,6 @@
 .pricing-block__description {
   margin-top: 2em;
   padding-bottom: 2em;
-  min-height: 120px;
 }
 
 .pricing-block__check {

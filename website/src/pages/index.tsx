@@ -32,8 +32,8 @@ const plansAdvantages = {
 
 const advantagesList = (plan: Array<{ highlight?: boolean, text: string}>) => {
   return plan.map((advantage) => (
-    <div className="row start-xs">
-      <div className="col-xs-12">
+    <div className="row center-xs start-md">
+      <div className="col-md-12">
         <div className={(advantage.highlight ? 'pricing-block__check--highlight' : '')}>
           <span className="pricing-block__check "><img src={(advantage.highlight ? CheckHighlightImage : CheckImage)} /></span> {advantage.text}
         </div>
@@ -50,23 +50,23 @@ const IndexPage = () => {
         {/* Header */}
         <div className="container-fluid">
           <div className="row header">
-            <div className="col-xs-6">
+            <div className="col-lg-6 col-md-4 col-xs-2">
               <h1 className="header__logo">
                 BigSeat.
               </h1>
             </div>
-            <div className="col-xs-6">
-              <div className="row menu">
-                <div className="col-xs-3">
+            <div className="col-lg-6 col-md-8 col-xs-10">
+              <div className="row end-xs menu">
+                <div className="col-sm-3 +more-than-xs">
                   Features
                 </div>
-                <div className="col-xs-3">
+                <div className="col-sm-3 +more-than-xs">
                   Pricing
                 </div>
-                <div className="col-xs-3">
+                <div className="col-sm-3 +more-than-xs">
                   About
                 </div>
-                <div className="col-xs-3">
+                <div className="col-xs-8 col-sm-3">
                   <span className="menu__button">
                     Sign-in
                   </span>
@@ -84,21 +84,21 @@ const IndexPage = () => {
                 </div>
               </div>
               <div className="row center-xs">
-                <div className="col-xs-6">
+                <div className="col-xs-10 col-md-6">
                   <div className="introduction__underline">
                     Optimize space, track seats and integrate easily with your company stack.
                   </div>
                 </div>
               </div>
               <div className="row center-xs">
-                <div className="col-xs-8">
+                <div className="col-lg-8 col-md-10 col-xs-12">
                   <div className="row middle-xs center-xs">
-                    <div className="col-xs-4">
+                    <div className="col-md-4 col-xs-12">
                       <span className="button">
                         Sign up free now
                       </span>
                     </div>
-                    <div className="col-xs-4">
+                    <div className="col-md-4 col-xs-12">
                       <div className="link">
                         Learn how we do it
                       </div>
@@ -126,7 +126,7 @@ const IndexPage = () => {
         {/* Features */}
         <div className="container-fluid">
           <div className="row center-xs features">
-            <div className="col-xs-8">
+            <div className="col-lg-8 col-md-10 col-xs-12">
               <div className="row">
                 <div className="col-xs-12">
                   <h2 className="features__punchline">
@@ -139,19 +139,19 @@ const IndexPage = () => {
                   <h3 className="features-block__title">Accessibility.</h3>
                   <p className="features-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                 </div>
-                <div className="col-xs-5 col-xs-offset-2">
+                <div className="col-xs-6 col-md-5 col-xs-offset-1 col-md-offset-2">
                   <div className="features-block__image">
                     <img src={AccessibilityImage} />
                   </div>
                 </div>
               </div>
               <div className="row features-block middle-xs start-xs">
-              <div className="col-xs-5">
+              <div className="col-xs-6">
                   <div className="features-block__image">
                     <img src={AnalyticsImage} />
                   </div>
                 </div>
-                <div className="col-xs-5 col-xs-offset-2">
+                <div className="col-xs-5 col-md-5 col-xs-offset-1">
                   <h3 className="features-block__title">Analytics.</h3>
                   <p className="features-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                 </div>
@@ -161,7 +161,7 @@ const IndexPage = () => {
                   <h3 className="features-block__title">Integrations.</h3>
                   <p className="features-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                 </div>
-                <div className="col-xs-5 col-xs-offset-2">
+                <div className="col-xs-6 col-md-5 col-xs-offset-1 col-md-offset-2">
                   <div className="features-block__image">
                     <img src={IntegrationsImage} />
                   </div>
@@ -173,7 +173,7 @@ const IndexPage = () => {
         {/* Pricing */}
         <div className="container-fluid">
           <div className="row center-xs pricing">
-            <div className="col-xs-8">
+            <div className="col-xs-12 col-md-10 col-lg-8">
               <div className="row">
                 <div className="col-xs-12">
                   <h2 className="pricing__punchline">
@@ -183,7 +183,7 @@ const IndexPage = () => {
               </div>
               <div className="row">
                 {/* Small office */}
-                <div className="col-xs-4">
+                <div className="col-xs-12 col-sm-4">
                   <div className="pricing-block">
                     <div className="row center-xs">
                       <div className="col-xs-12">
@@ -206,8 +206,8 @@ const IndexPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="row start-xs">
-                      <div className="col-xs-12">
+                    <div className="row center-xs start-md">
+                      <div className="col-xs-5 col-sm-10 col-md-12">
                         <div className="pricing-block__description">
                           This is our most basic plan. It provides unlimited rooms, analytics and integrations and and a few available seats to place.
                         </div>
@@ -226,7 +226,7 @@ const IndexPage = () => {
                   </div>
                 </div>
                 {/* Growing office */}
-                <div className="col-xs-4">
+                <div className="col-xs-12 col-sm-4">
                   <div className="pricing-block">
                     <div className="row center-xs">
                       <div className="col-xs-12">
@@ -249,8 +249,8 @@ const IndexPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="row start-xs">
-                      <div className="col-xs-12">
+                    <div className="row center-xs start-md">
+                      <div className="col-xs-5 col-sm-10 col-md-12">
                         <div className="pricing-block__description">
                           If you’re a growing company and have too many employees for our free version, this one will fit you perfectly.
                         </div>
@@ -269,7 +269,7 @@ const IndexPage = () => {
                   </div>
                 </div>
                 {/* Big office */}
-                <div className="col-xs-4">
+                <div className="col-xs-12 col-sm-4">
                   <div className="pricing-block">
                     <div className="row center-xs">
                       <div className="col-xs-12">
@@ -292,8 +292,8 @@ const IndexPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="row start-xs">
-                      <div className="col-xs-12">
+                    <div className="row center-xs start-md">
+                      <div className="col-xs-5 col-sm-10 col-md-12">
                         <div className="pricing-block__description">
                         You’re a bigger, more established company which needs an unlimited amount of seats? No worry, here’s the perfect fit for you.
                         </div>
@@ -318,7 +318,7 @@ const IndexPage = () => {
         {/* About us */}
         <div className="container-fluid">
           <div className="row center-xs features">
-            <div className="col-xs-8">
+            <div className="col-lg-8 col-md-10 col-xs-12">
               <div className="row">
                 <div className="col-xs-12">
                   <h2 className="features__punchline">
@@ -331,7 +331,7 @@ const IndexPage = () => {
                   <h3 className="features-block__title">The company</h3>
                   <p className="features-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                 </div>
-                <div className="col-xs-5 col-xs-offset-2">
+                <div className="col-xs-6 col-md-5 col-xs-offset-1 col-md-offset-2">
                   <div className="features-block__image">
                     <img src={TheCompanyImage} />
                   </div>
@@ -343,7 +343,7 @@ const IndexPage = () => {
                     <img src={TheProjectImage} />
                   </div>
                 </div>
-                <div className="col-xs-5 col-xs-offset-2">
+                <div className="col-xs-6 col-md-5 col-xs-offset-1">
                   <h3 className="features-block__title">The project.</h3>
                   <p className="features-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                 </div>
@@ -371,7 +371,7 @@ const IndexPage = () => {
                   </div>
                 </div>
                 <div className="row center-xs">
-                  <div className="col-xs-4">
+                  <div className="col-lg-4 col-md-6">
                     <div className="button button--white">
                       Sign up free now
                     </div>
