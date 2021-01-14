@@ -1,6 +1,8 @@
 import * as React from "react"
 import IntroductionImage from "../images/introduction.svg"
 import AccessibilityImage from "../images/accessibility.svg"
+import AnalyticsImage from "../images/analytics.svg"
+import IntegrationsImage from "../images/integrations.svg"
 
 // markup
 const IndexPage = () => {
@@ -87,14 +89,36 @@ const IndexPage = () => {
                   </h2>
                 </div>
               </div>
-              <div className="row middle-xs">
+              <div className="row features-block middle-xs">
                 <div className="col-xs-5">
-                  <h3 className="features-block__title">Accessibility</h3>
+                  <h3 className="features-block__title">Accessibility.</h3>
                   <p className="features-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                 </div>
                 <div className="col-xs-5 col-xs-offset-2">
                   <div class="features-block__image">
                     <img src={AccessibilityImage} />
+                  </div>
+                </div>
+              </div>
+              <div className="row features-block middle-xs">
+              <div className="col-xs-5">
+                  <div class="features-block__image">
+                    <img src={AnalyticsImage} />
+                  </div>
+                </div>
+                <div className="col-xs-5 col-xs-offset-2">
+                  <h3 className="features-block__title">Analytics.</h3>
+                  <p className="features-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+              </div>
+              <div className="row features-block middle-xs">
+                <div className="col-xs-5">
+                  <h3 className="features-block__title">Integrations.</h3>
+                  <p className="features-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+                <div className="col-xs-5 col-xs-offset-2">
+                  <div class="features-block__image">
+                    <img src={IntegrationsImage} />
                   </div>
                 </div>
               </div>
