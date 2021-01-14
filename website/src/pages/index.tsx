@@ -317,7 +317,7 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-        {/* About */}
+        {/* About us */}
         <div className="container-fluid">
           <div className="row features">
             <div className="col-xs-8 col-xs-offset-2">
@@ -348,6 +348,36 @@ const IndexPage = () => {
                 <div className="col-xs-5 col-xs-offset-2">
                   <h3 className="features-block__title">The project.</h3>
                   <p className="features-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Get started now */}
+        <div className="banner">
+          <div className="container">
+            <div className="row center-xs">
+              <div className="col-xs-8">
+                <div className="row">
+                  <div className="col-xs-12">
+                    <div className="banner__punchline">
+                      Get started now.
+                    </div>
+                  </div>
+                </div>
+                <div className="row center-xs">
+                  <div className="col-xs-6">
+                    <div className="banner__underline">
+                      It takes you less than <span className="banner__underline--time">5 minutes</span> to sign-up and start using ou product.
+                    </div>
+                  </div>
+                </div>
+                <div className="row center-xs">
+                  <div className="col-xs-4">
+                    <div className="button button--white">
+                      Sign up free now
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
