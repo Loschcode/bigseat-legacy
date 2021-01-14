@@ -67,8 +67,8 @@ const plansAdvantages = {
 }
 
 const advantagesList = (plan: Array<{ highlight?: boolean, text: string}>) => {
-  return plan.map((advantage) => (
-    <div className="row center-xs start-md">
+  return plan.map((advantage, index) => (
+    <div className="row center-xs start-md" key={index}>
       <div className="col-md-12">
         <div className={(advantage.highlight ? 'pricing-block__check--highlight' : '')}>
           <span className="pricing-block__check "><img src={(advantage.highlight ? CheckHighlightImage : CheckImage)} /></span> {advantage.text}
@@ -97,10 +97,10 @@ const IndexPage = () => {
                   <Link className="header__link" to="#features">Features</Link>
                 </div>
                 <div className="col-sm-3 +more-than-xs">
-                <Link className="header__link" to="#pricing">Pricing</Link>
+                  <Link className="header__link" to="#pricing">Pricing</Link>
                 </div>
                 <div className="col-sm-3 +more-than-xs">
-                <Link className="header__link" to="#about">About</Link>
+                  <Link className="header__link" to="#about">About</Link>
                 </div>
                 <div className="col-xs-8 col-sm-3">
                   <span className="menu__button" onClick={signIn}>
@@ -161,7 +161,7 @@ const IndexPage = () => {
         </div>
         {/* Features */}
         <div className="container-fluid">
-          <div className="row center-xs features">
+          <div className="row center-xs features" id="features">
             <div className="col-lg-8 col-md-10 col-xs-12">
               <div className="row">
                 <div className="col-xs-12">
@@ -208,7 +208,7 @@ const IndexPage = () => {
         </div>
         {/* Pricing */}
         <div className="container-fluid">
-          <div className="row center-xs pricing">
+          <div className="row center-xs pricing" id="pricing">
             <div className="col-xs-12 col-md-10 col-lg-8">
               <div className="row">
                 <div className="col-xs-12">
@@ -353,7 +353,7 @@ const IndexPage = () => {
         </div>
         {/* About us */}
         <div className="container-fluid">
-          <div className="row center-xs features">
+          <div className="row center-xs features" id="about">
             <div className="col-lg-8 col-md-10 col-xs-12">
               <div className="row">
                 <div className="col-xs-12">
