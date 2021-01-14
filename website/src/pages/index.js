@@ -3,6 +3,7 @@ import IntroductionImage from "../images/introduction.svg"
 import AccessibilityImage from "../images/accessibility.svg"
 import AnalyticsImage from "../images/analytics.svg"
 import IntegrationsImage from "../images/integrations.svg"
+import DownImage from "../images/down.svg"
 
 // markup
 const IndexPage = () => {
@@ -72,6 +73,13 @@ const IndexPage = () => {
                 <div className="col-xs-12">
                   <div className="introduction__image">
                     <img src={IntroductionImage} />
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-xs-12">
+                  <div className="introduction__down">
+                    <img src={DownImage} />
                   </div>
                 </div>
               </div>
