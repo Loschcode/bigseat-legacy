@@ -9,8 +9,6 @@ import CheckHighlightImage from "../images/check-highlight.svg"
 import TheCompanyImage from "../images/the-company.svg"
 import TheProjectImage from "../images/the-project.svg"
 
-
-const plans = { text: String, highlight: Boolean}
 const plansAdvantages = {
   smallOffice: [
     { text: 'Unlimited rooms'},
@@ -34,7 +32,7 @@ const plansAdvantages = {
 
 const advantagesList = (plan: Array<{ highlight?: boolean, text: string}>) => {
   return plan.map((advantage) => (
-    <div className="row">
+    <div className="row start-xs">
       <div className="col-xs-12">
         <div className={(advantage.highlight ? 'pricing-block__check--highlight' : '')}>
           <span className="pricing-block__check "><img src={(advantage.highlight ? CheckHighlightImage : CheckImage)} /></span> {advantage.text}
@@ -85,8 +83,8 @@ const IndexPage = () => {
                   </h2>
                 </div>
               </div>
-              <div className="row">
-                <div className="col-xs-6 col-xs-offset-3">
+              <div className="row center-xs">
+                <div className="col-xs-6">
                   <div className="introduction__underline">
                     Optimize space, track seats and integrate easily with your company stack.
                   </div>
@@ -94,8 +92,8 @@ const IndexPage = () => {
               </div>
               <div className="row center-xs">
                 <div className="col-xs-8">
-                  <div className="row middle-xs">
-                    <div className="col-xs-4 col-xs-offset-2">
+                  <div className="row middle-xs center-xs">
+                    <div className="col-xs-4">
                       <span className="button">
                         Sign up free now
                       </span>
@@ -127,8 +125,8 @@ const IndexPage = () => {
         </div>
         {/* Features */}
         <div className="container-fluid">
-          <div className="row features">
-            <div className="col-xs-8 col-xs-offset-2">
+          <div className="row center-xs features">
+            <div className="col-xs-8">
               <div className="row">
                 <div className="col-xs-12">
                   <h2 className="features__punchline">
@@ -136,7 +134,7 @@ const IndexPage = () => {
                   </h2>
                 </div>
               </div>
-              <div className="row features-block middle-xs">
+              <div className="row features-block middle-xs start-xs">
                 <div className="col-xs-5">
                   <h3 className="features-block__title">Accessibility.</h3>
                   <p className="features-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -147,7 +145,7 @@ const IndexPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="row features-block middle-xs">
+              <div className="row features-block middle-xs start-xs">
               <div className="col-xs-5">
                   <div className="features-block__image">
                     <img src={AnalyticsImage} />
@@ -158,7 +156,7 @@ const IndexPage = () => {
                   <p className="features-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                 </div>
               </div>
-              <div className="row features-block middle-xs">
+              <div className="row features-block middle-xs start-xs">
                 <div className="col-xs-5">
                   <h3 className="features-block__title">Integrations.</h3>
                   <p className="features-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -174,8 +172,8 @@ const IndexPage = () => {
         </div>
         {/* Pricing */}
         <div className="container-fluid">
-          <div className="row pricing">
-            <div className="col-xs-8 col-xs-offset-2">
+          <div className="row center-xs pricing">
+            <div className="col-xs-8">
               <div className="row">
                 <div className="col-xs-12">
                   <h2 className="pricing__punchline">
@@ -208,7 +206,7 @@ const IndexPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="row">
+                    <div className="row start-xs">
                       <div className="col-xs-12">
                         <div className="pricing-block__description">
                           This is our most basic plan. It provides unlimited rooms, analytics and integrations and and a few available seats to place.
@@ -216,7 +214,7 @@ const IndexPage = () => {
                       </div>
                     </div>
                     {advantagesList(plansAdvantages.smallOffice)}
-                    <div className="row">
+                    <div className="row start-xs">
                       <div className="col-xs-12 center-xs">
                         <div className="pricing-block__button">
                           <div className="button button--white">
@@ -251,7 +249,7 @@ const IndexPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="row">
+                    <div className="row start-xs">
                       <div className="col-xs-12">
                         <div className="pricing-block__description">
                           If you’re a growing company and have too many employees for our free version, this one will fit you perfectly.
@@ -294,7 +292,7 @@ const IndexPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="row">
+                    <div className="row start-xs">
                       <div className="col-xs-12">
                         <div className="pricing-block__description">
                         You’re a bigger, more established company which needs an unlimited amount of seats? No worry, here’s the perfect fit for you.
@@ -319,8 +317,8 @@ const IndexPage = () => {
         </div>
         {/* About us */}
         <div className="container-fluid">
-          <div className="row features">
-            <div className="col-xs-8 col-xs-offset-2">
+          <div className="row center-xs features">
+            <div className="col-xs-8">
               <div className="row">
                 <div className="col-xs-12">
                   <h2 className="features__punchline">
@@ -328,7 +326,7 @@ const IndexPage = () => {
                   </h2>
                 </div>
               </div>
-              <div className="row features-block middle-xs">
+              <div className="row features-block middle-xs start-xs">
                 <div className="col-xs-5">
                   <h3 className="features-block__title">The company</h3>
                   <p className="features-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -339,7 +337,7 @@ const IndexPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="row features-block middle-xs">
+              <div className="row features-block middle-xs start-xs">
               <div className="col-xs-5">
                   <div className="features-block__image">
                     <img src={TheProjectImage} />
@@ -355,7 +353,7 @@ const IndexPage = () => {
         </div>
         {/* Get started now */}
         <div className="banner">
-          <div className="container">
+          <div className="container-fluid">
             <div className="row center-xs">
               <div className="col-xs-8">
                 <div className="row">
