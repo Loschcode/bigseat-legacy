@@ -4,6 +4,42 @@ import AccessibilityImage from "../images/accessibility.svg"
 import AnalyticsImage from "../images/analytics.svg"
 import IntegrationsImage from "../images/integrations.svg"
 import DownImage from "../images/down.svg"
+import CheckImage from "../images/check.svg"
+import CheckHighlightImage from "../images/check-highlight.svg"
+
+
+const plansAdvantages = {
+  smallOffice: [
+    { text: 'Unlimited rooms'},
+    { text: 'Unlimited analytics' },
+    { text: 'Unlimited integrations' },
+    { text: 'Up to 10 seats available' }
+  ],
+  growingOffice: [
+    { text: 'Unlimited rooms'},
+    { text: 'Unlimited analytics' },
+    { text: 'Unlimited integrations' },
+    { text: 'Up to 50 seats available', highlight: true }
+  ],
+  bigOffice: [
+    { text: 'Unlimited rooms'},
+    { text: 'Unlimited analytics' },
+    { text: 'Unlimited integrations' },
+    { text: 'Unlimited seats', highlight: true }
+  ]
+}
+
+const advantagesList = (plan) => {
+  return plan.map((advantage, index) => (
+    <div class="row">
+      <div class="col-xs-12">
+        <div class={(advantage.highlight ? 'pricing-block__check--highlight' : '')}>
+          <span className="pricing-block__check "><img src={(advantage.highlight ? CheckHighlightImage : CheckImage)} /></span> {advantage.text}
+        </div>
+      </div>
+    </div>
+  ))
+}
 
 // markup
 const IndexPage = () => {
@@ -127,6 +163,151 @@ const IndexPage = () => {
                 <div className="col-xs-5 col-xs-offset-2">
                   <div class="features-block__image">
                     <img src={IntegrationsImage} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Features */}
+        <div className="container-fluid">
+          <div className="row pricing">
+            <div className="col-xs-8 col-xs-offset-2">
+              <div className="row">
+                <div className="col-xs-12">
+                  <h2 className="pricing__punchline">
+                    A plan for each size.
+                  </h2>
+                </div>
+              </div>
+              <div class="row">
+                {/* Small office */}
+                <div className="col-xs-4">
+                  <div className="pricing-block">
+                    <div class="row center-xs">
+                      <div class="col-xs-12">
+                        <div class="pricing-block__title">
+                          Small office
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row center-xs">
+                      <div class="col-xs-12">
+                        <div class="pricing-block__price">
+                          Free
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row center-xs">
+                      <div class="col-xs-12">
+                        <div class="pricing-block__price-frequency">
+                          forever
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="pricing-block__description">
+                          This is our most basic plan. It provides unlimited rooms, analytics and integrations and and a few available seats to place.
+                        </div>
+                      </div>
+                    </div>
+                    {advantagesList(plansAdvantages.smallOffice)}
+                    <div class="row">
+                      <div class="col-xs-12 center-xs">
+                        <div class="pricing-block__button">
+                          <div class="button button--white">
+                            Sign up free now
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* Growing office */}
+                <div className="col-xs-4">
+                  <div class="pricing-block">
+                    <div class="row center-xs">
+                      <div class="col-xs-12">
+                        <div class="pricing-block__title">
+                          Growing office
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row center-xs">
+                      <div class="col-xs-12">
+                        <div class="pricing-block__price">
+                          $19<span class="pricing-block__price--cents">.90</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row center-xs">
+                      <div class="col-xs-12">
+                        <div class="pricing-block__price-frequency">
+                          per month
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="pricing-block__description">
+                          If you’re a growing company and have too many employees for our free version, this one will fit you perfectly.
+                        </div>
+                      </div>
+                    </div>
+                    {advantagesList(plansAdvantages.growingOffice)}
+                    <div class="row">
+                      <div class="col-xs-12 center-xs">
+                        <div class="pricing-block__button">
+                          <div class="button">
+                            Select this plan
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* Big office */}
+                <div className="col-xs-4">
+                  <div class="pricing-block">
+                    <div class="row center-xs">
+                      <div class="col-xs-12">
+                        <div class="pricing-block__title">
+                          Big office
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row center-xs">
+                      <div class="col-xs-12">
+                        <div class="pricing-block__price">
+                          $49<span class="pricing-block__price--cents">.90</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row center-xs">
+                      <div class="col-xs-12">
+                        <div class="pricing-block__price-frequency">
+                          per month
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="pricing-block__description">
+                        You’re a bigger, more established company which needs an unlimited amount of seats? No worry, here’s the perfect fit for you.
+                        </div>
+                      </div>
+                    </div>
+                    {advantagesList(plansAdvantages.bigOffice)}
+                    <div class="row">
+                      <div class="col-xs-12 center-xs">
+                        <div class="pricing-block__button">
+                          <div class="button">
+                            Select this plan
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
