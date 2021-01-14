@@ -1,13 +1,49 @@
 import * as React from "react"
+import { Link, navigate } from "gatsby"
+
 import IntroductionImage from "../images/introduction.svg"
 import AccessibilityImage from "../images/accessibility.svg"
 import AnalyticsImage from "../images/analytics.svg"
 import IntegrationsImage from "../images/integrations.svg"
+import TheCompanyImage from "../images/the-company.svg"
+import TheProjectImage from "../images/the-project.svg"
+
 import DownImage from "../images/down.svg"
 import CheckImage from "../images/check.svg"
 import CheckHighlightImage from "../images/check-highlight.svg"
-import TheCompanyImage from "../images/the-company.svg"
-import TheProjectImage from "../images/the-project.svg"
+
+const signIn = () => {
+  navigate('/sign-in')
+}
+
+const signUp = () => {
+  navigate('/sign-up')
+}
+
+const learnHow = () => {
+  navigate('#features')
+}
+
+const goDown = () => {
+  navigate('#features')
+}
+
+const selectSmallOffice = () => {
+  navigate('/sign-up')
+}
+
+const selectGrowingOffice = () => {
+  navigate('/sign-up')
+}
+
+const selectBigOffice = () => {
+  navigate('/sign-up')
+}
+
+const bottomSignUp = () => {
+  navigate('/sign-up')
+}
+
 
 const plansAdvantages = {
   smallOffice: [
@@ -58,17 +94,17 @@ const IndexPage = () => {
             <div className="col-lg-6 col-md-8 col-xs-10">
               <div className="row end-xs menu">
                 <div className="col-sm-3 +more-than-xs">
-                  Features
+                  <Link className="header__link" to="#features">Features</Link>
                 </div>
                 <div className="col-sm-3 +more-than-xs">
-                  Pricing
+                <Link className="header__link" to="#pricing">Pricing</Link>
                 </div>
                 <div className="col-sm-3 +more-than-xs">
-                  About
+                <Link className="header__link" to="#about">About</Link>
                 </div>
                 <div className="col-xs-8 col-sm-3">
-                  <span className="menu__button">
-                    Sign-in
+                  <span className="menu__button" onClick={signIn}>
+                    Sign in
                   </span>
                 </div>
               </div>
@@ -94,12 +130,12 @@ const IndexPage = () => {
                 <div className="col-lg-8 col-md-10 col-xs-12">
                   <div className="row middle-xs center-xs">
                     <div className="col-md-4 col-xs-12">
-                      <span className="button">
+                      <span className="button" onClick={signUp}>
                         Sign up free now
                       </span>
                     </div>
                     <div className="col-md-4 col-xs-12">
-                      <div className="link">
+                      <div className="link" onClick={learnHow}>
                         Learn how we do it
                       </div>
                     </div>
@@ -116,7 +152,7 @@ const IndexPage = () => {
               <div className="row">
                 <div className="col-xs-12">
                   <div className="introduction__down">
-                    <img src={DownImage} />
+                    <img src={DownImage} onClick={goDown} />
                   </div>
                 </div>
               </div>
@@ -217,7 +253,7 @@ const IndexPage = () => {
                     <div className="row start-xs">
                       <div className="col-xs-12 center-xs">
                         <div className="pricing-block__button">
-                          <div className="button button--white">
+                          <div className="button button--white" onClick={selectSmallOffice}>
                             Sign up free now
                           </div>
                         </div>
@@ -260,7 +296,7 @@ const IndexPage = () => {
                     <div className="row">
                       <div className="col-xs-12 center-xs">
                         <div className="pricing-block__button">
-                          <div className="button">
+                          <div className="button" onClick={selectGrowingOffice}>
                             Select this plan
                           </div>
                         </div>
@@ -303,7 +339,7 @@ const IndexPage = () => {
                     <div className="row">
                       <div className="col-xs-12 center-xs">
                         <div className="pricing-block__button">
-                          <div className="button">
+                          <div className="button" onClick={selectBigOffice}>
                             Select this plan
                           </div>
                         </div>
@@ -372,7 +408,7 @@ const IndexPage = () => {
                 </div>
                 <div className="row center-xs">
                   <div className="col-lg-4 col-md-6">
-                    <div className="button button--white">
+                    <div className="button button--white" onClick={bottomSignUp}>
                       Sign up free now
                     </div>
                   </div>

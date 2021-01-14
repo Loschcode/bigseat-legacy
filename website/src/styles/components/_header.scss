@@ -8,3 +8,9 @@
   font-weight: 800;
   color: $color-black
 }
+
+.header__link {
+  &:hover {
+    border-bottom: 3px solid $color-primary;
+  }
+}
