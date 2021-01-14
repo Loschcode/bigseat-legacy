@@ -6,8 +6,11 @@ import IntegrationsImage from "../images/integrations.svg"
 import DownImage from "../images/down.svg"
 import CheckImage from "../images/check.svg"
 import CheckHighlightImage from "../images/check-highlight.svg"
+import TheCompanyImage from "../images/the-company.svg"
+import TheProjectImage from "../images/the-project.svg"
 
 
+const plans = { text: String, highlight: Boolean}
 const plansAdvantages = {
   smallOffice: [
     { text: 'Unlimited rooms'},
@@ -29,11 +32,11 @@ const plansAdvantages = {
   ]
 }
 
-const advantagesList = (plan) => {
-  return plan.map((advantage, index) => (
-    <div class="row">
-      <div class="col-xs-12">
-        <div class={(advantage.highlight ? 'pricing-block__check--highlight' : '')}>
+const advantagesList = (plan: Array<{ highlight?: boolean, text: string}>) => {
+  return plan.map((advantage) => (
+    <div className="row">
+      <div className="col-xs-12">
+        <div className={(advantage.highlight ? 'pricing-block__check--highlight' : '')}>
           <span className="pricing-block__check "><img src={(advantage.highlight ? CheckHighlightImage : CheckImage)} /></span> {advantage.text}
         </div>
       </div>
@@ -139,14 +142,14 @@ const IndexPage = () => {
                   <p className="features-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                 </div>
                 <div className="col-xs-5 col-xs-offset-2">
-                  <div class="features-block__image">
+                  <div className="features-block__image">
                     <img src={AccessibilityImage} />
                   </div>
                 </div>
               </div>
               <div className="row features-block middle-xs">
               <div className="col-xs-5">
-                  <div class="features-block__image">
+                  <div className="features-block__image">
                     <img src={AnalyticsImage} />
                   </div>
                 </div>
@@ -161,7 +164,7 @@ const IndexPage = () => {
                   <p className="features-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                 </div>
                 <div className="col-xs-5 col-xs-offset-2">
-                  <div class="features-block__image">
+                  <div className="features-block__image">
                     <img src={IntegrationsImage} />
                   </div>
                 </div>
@@ -169,7 +172,7 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-        {/* Features */}
+        {/* Pricing */}
         <div className="container-fluid">
           <div className="row pricing">
             <div className="col-xs-8 col-xs-offset-2">
@@ -180,43 +183,43 @@ const IndexPage = () => {
                   </h2>
                 </div>
               </div>
-              <div class="row">
+              <div className="row">
                 {/* Small office */}
                 <div className="col-xs-4">
                   <div className="pricing-block">
-                    <div class="row center-xs">
-                      <div class="col-xs-12">
-                        <div class="pricing-block__title">
+                    <div className="row center-xs">
+                      <div className="col-xs-12">
+                        <div className="pricing-block__title">
                           Small office
                         </div>
                       </div>
                     </div>
-                    <div class="row center-xs">
-                      <div class="col-xs-12">
-                        <div class="pricing-block__price">
+                    <div className="row center-xs">
+                      <div className="col-xs-12">
+                        <div className="pricing-block__price">
                           Free
                         </div>
                       </div>
                     </div>
-                    <div class="row center-xs">
-                      <div class="col-xs-12">
-                        <div class="pricing-block__price-frequency">
+                    <div className="row center-xs">
+                      <div className="col-xs-12">
+                        <div className="pricing-block__price-frequency">
                           forever
                         </div>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-xs-12">
-                        <div class="pricing-block__description">
+                    <div className="row">
+                      <div className="col-xs-12">
+                        <div className="pricing-block__description">
                           This is our most basic plan. It provides unlimited rooms, analytics and integrations and and a few available seats to place.
                         </div>
                       </div>
                     </div>
                     {advantagesList(plansAdvantages.smallOffice)}
-                    <div class="row">
-                      <div class="col-xs-12 center-xs">
-                        <div class="pricing-block__button">
-                          <div class="button button--white">
+                    <div className="row">
+                      <div className="col-xs-12 center-xs">
+                        <div className="pricing-block__button">
+                          <div className="button button--white">
                             Sign up free now
                           </div>
                         </div>
@@ -226,40 +229,40 @@ const IndexPage = () => {
                 </div>
                 {/* Growing office */}
                 <div className="col-xs-4">
-                  <div class="pricing-block">
-                    <div class="row center-xs">
-                      <div class="col-xs-12">
-                        <div class="pricing-block__title">
+                  <div className="pricing-block">
+                    <div className="row center-xs">
+                      <div className="col-xs-12">
+                        <div className="pricing-block__title">
                           Growing office
                         </div>
                       </div>
                     </div>
-                    <div class="row center-xs">
-                      <div class="col-xs-12">
-                        <div class="pricing-block__price">
-                          $19<span class="pricing-block__price--cents">.90</span>
+                    <div className="row center-xs">
+                      <div className="col-xs-12">
+                        <div className="pricing-block__price">
+                          $19<span className="pricing-block__price--cents">.90</span>
                         </div>
                       </div>
                     </div>
-                    <div class="row center-xs">
-                      <div class="col-xs-12">
-                        <div class="pricing-block__price-frequency">
+                    <div className="row center-xs">
+                      <div className="col-xs-12">
+                        <div className="pricing-block__price-frequency">
                           per month
                         </div>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-xs-12">
-                        <div class="pricing-block__description">
+                    <div className="row">
+                      <div className="col-xs-12">
+                        <div className="pricing-block__description">
                           If you’re a growing company and have too many employees for our free version, this one will fit you perfectly.
                         </div>
                       </div>
                     </div>
                     {advantagesList(plansAdvantages.growingOffice)}
-                    <div class="row">
-                      <div class="col-xs-12 center-xs">
-                        <div class="pricing-block__button">
-                          <div class="button">
+                    <div className="row">
+                      <div className="col-xs-12 center-xs">
+                        <div className="pricing-block__button">
+                          <div className="button">
                             Select this plan
                           </div>
                         </div>
@@ -269,46 +272,82 @@ const IndexPage = () => {
                 </div>
                 {/* Big office */}
                 <div className="col-xs-4">
-                  <div class="pricing-block">
-                    <div class="row center-xs">
-                      <div class="col-xs-12">
-                        <div class="pricing-block__title">
+                  <div className="pricing-block">
+                    <div className="row center-xs">
+                      <div className="col-xs-12">
+                        <div className="pricing-block__title">
                           Big office
                         </div>
                       </div>
                     </div>
-                    <div class="row center-xs">
-                      <div class="col-xs-12">
-                        <div class="pricing-block__price">
-                          $49<span class="pricing-block__price--cents">.90</span>
+                    <div className="row center-xs">
+                      <div className="col-xs-12">
+                        <div className="pricing-block__price">
+                          $49<span className="pricing-block__price--cents">.90</span>
                         </div>
                       </div>
                     </div>
-                    <div class="row center-xs">
-                      <div class="col-xs-12">
-                        <div class="pricing-block__price-frequency">
+                    <div className="row center-xs">
+                      <div className="col-xs-12">
+                        <div className="pricing-block__price-frequency">
                           per month
                         </div>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-xs-12">
-                        <div class="pricing-block__description">
+                    <div className="row">
+                      <div className="col-xs-12">
+                        <div className="pricing-block__description">
                         You’re a bigger, more established company which needs an unlimited amount of seats? No worry, here’s the perfect fit for you.
                         </div>
                       </div>
                     </div>
                     {advantagesList(plansAdvantages.bigOffice)}
-                    <div class="row">
-                      <div class="col-xs-12 center-xs">
-                        <div class="pricing-block__button">
-                          <div class="button">
+                    <div className="row">
+                      <div className="col-xs-12 center-xs">
+                        <div className="pricing-block__button">
+                          <div className="button">
                             Select this plan
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* About */}
+        <div className="container-fluid">
+          <div className="row features">
+            <div className="col-xs-8 col-xs-offset-2">
+              <div className="row">
+                <div className="col-xs-12">
+                  <h2 className="features__punchline">
+                    About us.
+                  </h2>
+                </div>
+              </div>
+              <div className="row features-block middle-xs">
+                <div className="col-xs-5">
+                  <h3 className="features-block__title">The company</h3>
+                  <p className="features-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+                <div className="col-xs-5 col-xs-offset-2">
+                  <div className="features-block__image">
+                    <img src={TheCompanyImage} />
+                  </div>
+                </div>
+              </div>
+              <div className="row features-block middle-xs">
+              <div className="col-xs-5">
+                  <div className="features-block__image">
+                    <img src={TheProjectImage} />
+                  </div>
+                </div>
+                <div className="col-xs-5 col-xs-offset-2">
+                  <h3 className="features-block__title">The project.</h3>
+                  <p className="features-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                 </div>
               </div>
             </div>
