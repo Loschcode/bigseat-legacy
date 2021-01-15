@@ -245,7 +245,7 @@ const IndexPage = () => {
                     <div className="row center-xs start-md">
                       <div className="col-xs-5 col-sm-10 col-md-12">
                         <div className="pricing-block__description">
-                          This is our most basic plan. It provides unlimited rooms, analytics and integrations and and a few available seats to place.
+                          This is our most basic plan. It provides unlimited rooms, analytics and integrations and a few available seats for small structures.
                         </div>
                       </div>
                     </div>
@@ -288,7 +288,7 @@ const IndexPage = () => {
                     <div className="row center-xs start-md">
                       <div className="col-xs-5 col-sm-10 col-md-12">
                         <div className="pricing-block__description">
-                          If you’re a growing company and have too many employees for our free version, this one will fit you perfectly.
+                          If you’re a growing company and have too many employees for our free version, this one will fit you perfectly. You can try it out before taking a decision.
                         </div>
                       </div>
                     </div>
@@ -297,7 +297,7 @@ const IndexPage = () => {
                       <div className="col-xs-12 center-xs">
                         <div className="pricing-block__button">
                           <div className="button" onClick={selectGrowingOffice}>
-                            Select this plan
+                            Try for free
                           </div>
                         </div>
                       </div>
@@ -340,7 +340,7 @@ const IndexPage = () => {
                       <div className="col-xs-12 center-xs">
                         <div className="pricing-block__button">
                           <div className="button" onClick={selectBigOffice}>
-                            Select this plan
+                            Try for free
                           </div>
                         </div>
                       </div>
