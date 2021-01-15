@@ -23,6 +23,7 @@
 @import 'app/components/example';
 @import 'app/components/style_guide';
 @import 'app/components/layout_admin';
+@import 'app/components/layout_booking';
 @import 'app/components/navigation';
 @import 'app/components/empty_state';
 @import 'app/components/button';
@@ -47,6 +48,10 @@
 @import 'app/components/centered_scrolling';
 @import 'app/components/privacy';
 @import 'app/components/terms';
+@import 'app/components/booking_rooms';
+@import 'app/components/booking_calendar';
 
 @import 'app/hooks/ember_basic_dropdown';
 @import 'app/hooks/ember_modal_dialog';
+
+@import 'app/trumps/avalanche_overrides';

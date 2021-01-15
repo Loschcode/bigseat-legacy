@@ -29,6 +29,10 @@ html {
     overflow-y: scroll; /* [5] */
 }
 
+/**
+ * If you tweak the font-size
+ * take a look at /app/trumps/avalanche_overrides.scss
+ */
 body {
     font-size: $font-size-small;
     font-weight: $font-weight-normal;

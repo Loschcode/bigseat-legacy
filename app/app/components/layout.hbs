@@ -26,10 +26,10 @@
         {{yield}}
       </div>
       <div class="layout-booking__footer">
-        <LinkTo @route="booking.privacy">Privacy Policy</LinkTo>
-        <LinkTo @route="booking.terms">Terms of use</LinkTo>
+        <LinkTo @route="booking.privacy" class="link link--secondary">Privacy Policy</LinkTo>
+        -
+        <LinkTo @route="booking.terms" class="link link--secondary">Terms of use</LinkTo>
       </div>
     </div>
   </div>
 {{/if}}
-
