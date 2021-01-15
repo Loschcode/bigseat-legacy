@@ -18,3 +18,12 @@
 .introduction__image {
   margin-top: 3em;
 }
+
+.introduction__down {
+  margin-top: 2em;
+  margin-bottom: 3em;
+  cursor: pointer;
+  @include breakpoint("md") {
+    margin-top: 4em;
+  }
+}
