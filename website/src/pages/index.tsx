@@ -381,7 +381,7 @@ const IndexPage = () => {
                 </div>
                 <div className="col-xs-6 col-md-5 col-xs-offset-1">
                   <h3 className="features-block__title">The company.</h3>
-                  <p className="features-block__text">Born in January 2021, it was founded by Laurent Schaffner and Jérémie Ges which are both engineers. It's still under closed beta and waiting for your feedbacks.</p>
+                  <p className="features-block__text">Born in January 2021, it was founded by Laurent Schaffner and Jérémie Ges which are both engineers. It's still in closed beta and waiting for your feedbacks.</p>
                 </div>
               </div>
             </div>
