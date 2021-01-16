@@ -173,7 +173,7 @@ const IndexPage = () => {
               <div className="row features-block middle-xs start-xs">
                 <div className="col-xs-5">
                   <h3 className="features-block__title">Accessibility.</h3>
-                  <p className="features-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                  <p className="features-block__text">Nothing to install, fast sign-up and super simple interface. You can setup your office space in a few clicks and let people book it by sending them your company link.</p>
                 </div>
                 <div className="col-xs-6 col-md-5 col-xs-offset-1 col-md-offset-2">
                   <div className="features-block__image">
@@ -189,13 +189,13 @@ const IndexPage = () => {
                 </div>
                 <div className="col-xs-5 col-md-5 col-xs-offset-1">
                   <h3 className="features-block__title">Analytics.</h3>
-                  <p className="features-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                  <p className="features-block__text">We digest data for you so you don't have to worry about space optimization. You'll know who's where at any moment and save real rental money by reading our analysis.</p>
                 </div>
               </div>
               <div className="row features-block middle-xs start-xs">
                 <div className="col-xs-5">
                   <h3 className="features-block__title">Integrations.</h3>
-                  <p className="features-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                  <p className="features-block__text">Each company its stack and we don't want to change that. That's why we integrate easily with a several solutions such as Slack, Notion or Zapier so you can easily adopt our system.</p>
                 </div>
                 <div className="col-xs-6 col-md-5 col-xs-offset-1 col-md-offset-2">
                   <div className="features-block__image">
@@ -364,24 +364,24 @@ const IndexPage = () => {
               </div>
               <div className="row features-block middle-xs start-xs">
                 <div className="col-xs-5">
-                  <h3 className="features-block__title">The company</h3>
-                  <p className="features-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                  <h3 className="features-block__title">The project</h3>
+                  <p className="features-block__text">The world is changing and people relation with offices as well. Working partially from home, or going to the office once in a while. Softwares should evolve and be able to manage this properly. Our goal is to be your office space management solution through our simplicity and flexibility.</p>
                 </div>
                 <div className="col-xs-6 col-md-5 col-xs-offset-1 col-md-offset-2">
                   <div className="features-block__image">
-                    <img src={TheCompanyImage} />
+                    <img src={TheProjectImage} />
                   </div>
                 </div>
               </div>
               <div className="row features-block middle-xs start-xs">
               <div className="col-xs-5">
                   <div className="features-block__image">
-                    <img src={TheProjectImage} />
+                    <img src={TheCompanyImage} />
                   </div>
                 </div>
                 <div className="col-xs-6 col-md-5 col-xs-offset-1">
-                  <h3 className="features-block__title">The project.</h3>
-                  <p className="features-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                  <h3 className="features-block__title">The company.</h3>
+                  <p className="features-block__text">Born in January 2021, it was founded by Laurent Schaffner and Jérémie Ges which are both engineers. It's still under closed beta and waiting for your feedbacks.</p>
                 </div>
               </div>
             </div>
