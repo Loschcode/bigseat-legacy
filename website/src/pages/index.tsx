@@ -47,19 +47,19 @@ const bottomSignUp = () => {
 
 const plansAdvantages = {
   smallOffice: [
-    { text: 'Unlimited rooms'},
+    { text: 'Unlimited spaces'},
     { text: 'Unlimited analytics' },
     { text: 'Unlimited integrations' },
     { text: 'Up to 10 seats available' }
   ],
   growingOffice: [
-    { text: 'Unlimited rooms'},
+    { text: 'Unlimited spaces'},
     { text: 'Unlimited analytics' },
     { text: 'Unlimited integrations' },
     { text: 'Up to 50 seats available', highlight: true }
   ],
   bigOffice: [
-    { text: 'Unlimited rooms'},
+    { text: 'Unlimited spaces'},
     { text: 'Unlimited analytics' },
     { text: 'Unlimited integrations' },
     { text: 'Unlimited seats', highlight: true }
@@ -115,14 +115,14 @@ const IndexPage = () => {
               <div className="row">
                 <div className="col-xs-12">
                   <h2 className="introduction__punchline">
-                    Office hotdesk made simple.
+                    Office space made simple.
                   </h2>
                 </div>
               </div>
               <div className="row center-xs">
                 <div className="col-xs-10 col-md-6">
                   <div className="introduction__underline">
-                    Optimize space, track seats and integrate easily with your company stack.
+                    Track occupancy, optimize space and integrate easily with your company stack.
                   </div>
                 </div>
               </div>
@@ -245,7 +245,7 @@ const IndexPage = () => {
                     <div className="row center-xs start-md">
                       <div className="col-xs-5 col-sm-10 col-md-12">
                         <div className="pricing-block__description">
-                          This is our most basic plan. It provides unlimited rooms, analytics and integrations and a few available seats for small structures.
+                          This is our most basic plan. It provides unlimited spaces, analytics and integrations and a few available seats for small structures.
                         </div>
                       </div>
                     </div>
