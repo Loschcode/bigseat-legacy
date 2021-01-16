@@ -195,7 +195,7 @@ const IndexPage = () => {
               <div className="row features-block middle-xs start-xs">
                 <div className="col-xs-5">
                   <h3 className="features-block__title">Integrations.</h3>
-                  <p className="features-block__text">Each company its stack and we don't want to change that. That's why we integrate easily with a several solutions such as Slack, Notion or Zapier so you can easily adopt our system.</p>
+                  <p className="features-block__text">Each company has its stack and we want you to feel you have to adapt. That's why we integrate easily with several solutions such as Slack, Notion or Zapier so you can easily adopt our system.</p>
                 </div>
                 <div className="col-xs-6 col-md-5 col-xs-offset-1 col-md-offset-2">
                   <div className="features-block__image">
